@@ -1,0 +1,40 @@
+object MultiLangMainFormFMX: TMultiLangMainFormFMX
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object memoMessages: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 88.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 409.000000000000000000
+    Size.Height = 209.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 405.000000000000000000
+    Viewport.Height = 205.000000000000000000
+  end
+  object cbLanguage: TComboBox
+    Items.Strings = (
+      'PL'
+      'EN')
+    Position.X = 88.000000000000000000
+    Position.Y = 96.000000000000000000
+    TabOrder = 1
+    OnChange = cbLanguageChange
+  end
+  object btnOK: TButton
+    ModalResult = 8
+    Position.X = 504.000000000000000000
+    Position.Y = 424.000000000000000000
+    TabOrder = 2
+    Text = 'OK'
+  end
+end
